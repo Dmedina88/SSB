@@ -1,4 +1,12 @@
-#Android Kotlin Flux 
+##Android Kotlin Flux 
+
+yeoman generator to set up a flux MVVM type project for android with DI set up and debug draw
+
+##how to run 
+cd to generator-ssb
+run: npm link
+cd to folder you want to create app in
+run: yo ssb
 
 ## This project uses:
 - [Support libraries](https://developer.android.com/topic/libraries/support-library/index.html)
@@ -9,6 +17,7 @@
 - [Gson](https://github.com/google/gson)
 - [Dagger 2](http://google.github.io/dagger/)
 - [Timber](https://github.com/JakeWharton/timber)
+- [DebugDrawer](https://github.com/palaima/DebugDrawer)
 
 MVVM + Flux is a user interface architectural pattern engineered to facilitate Unidirectional data flow:
 
