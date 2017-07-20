@@ -1,8 +1,8 @@
-##Android Kotlin Flux 
+## Android Kotlin MVVM + Flux  
 
-yeoman generator to set up a flux MVVM type project for android with DI set up and debug draw
+yeoman generator to set up a flux MVVM(without databinding  lib by default) type project for android with DI set up and debug draw
 
-##how to run 
+## How to run 
 cd to generator-ssb
 run: npm link
 cd to folder you want to create app in
