@@ -1,0 +1,94 @@
+[
+  {
+    "id": "5931d476467e3ff0316611f2",
+    "presenter": "Ellington",
+    "title": "Store - Android library for effortless, reactive data loading",
+    "platform": "Android",
+    "description": "Store is an Android library for effortless, reactive data loading.Store provides a level of abstraction between UI elements and data operations.",
+    "date": "2017-02-06",
+    "email": "ellington@prolificinteractive.com",
+    "slides": "https://www.dropbox.com/s/eevbh3h1fobax1e/store.key?dl=0",
+    "stream": "https://youtu.be/oUUE7Ki5J0A",
+    "tags": [
+      "Store",
+      "Android"
+    ]
+  },
+  {
+    "id": "59359f808039770004fcdbc7",
+    "presenter": "Alexander",
+    "title": "Native apps in C#: Xamarin",
+    "platform": "Cross Platform",
+    "description": "Taking a look at what Xamarin offers to you as development framework in comparison to React Native and pure native development. Looking up for potential gains and drawbacks, clarifying the difference between Xamarin.Forms and Xamarin.Native",
+    "date": "2017-02-06",
+    "email": "alexander@prolificinteractive.com",
+    "slides": "https://www.dropbox.com/home/Engineering/ios/DevTalks/2017-06-02%20Xamarin",
+    "stream": "https://www.youtube.com/watch?v=OPtrnz3uqGo",
+    "tags": [
+      "iOS",
+      "Android",
+      "Xamarin",
+      "Cross Platform"
+    ]
+  },
+  {
+    "id": "593b028146c89b0004117b91",
+    "presenter": "Tevin Jeffrey",
+    "title": "Android App Shortcuts",
+    "platform": "Android",
+    "description": "A deep dive in android app shortcuts.",
+    "date": "2017-09-06",
+    "email": "tevin@prolificinteractive.com",
+    "slides": " https://www.dropbox.com/s/dqy6shq3w2db7al/shortcuts.key?dl=0",
+    "stream": " https://youtu.be/p1Srw8CW-iM",
+    "tags": [
+      "Shortcuts",
+      "Android"
+    ]
+  },
+  {
+    "id": "5942ad03b0365d000499d17d",
+    "presenter": "DeAnna Azzolini ",
+    "title": "Team Dynamics and Group Decision Making",
+    "platform": "iOS",
+    "description": "An overview of how interpersonal interactions and dynamics impact team effectiveness and efficiency. We'll look at workplace styles, decision making methods and how to avoid barriers to good decision making within the lens of product teams.",
+    "date": "2017-09-06",
+    "email": "deanna@prolificinteractive.com",
+    "slides": "https://www.dropbox.com/home/Engineering/ios/DevTalks/2017-6-09%20Team%20Dynamics",
+    "stream": "https://youtu.be/XEBPbYzmXDs",
+    "tags": [
+      "Team Dynamics",
+      "iOS"
+    ]
+  },
+  {
+    "id": "5951322f46499a00043f7e58",
+    "presenter": "Quentin",
+    "title": "Animation: A Hibbett Case Study",
+    "platform": "Android",
+    "description": "Learning about Android Animation with 4 case studies.",
+    "date": "2017-09-28",
+    "email": "q.colle@prolificinteractive.com",
+    "slides": "https://www.dropbox.com/sh/lc0mm1c8ds5j2ay/AAA_XMwH-3O4SKHeVgy-ACzMa?dl=0&preview=android_animation.key",
+    "stream": "https://www.youtube.com/watch?v=kSiWXpO2VmA",
+    "tags": [
+      "Animation",
+      "Android"
+    ]
+  },
+  {
+    "id": "5952825dc361cb0004550ced",
+    "presenter": "Ash Furrow",
+    "title": "Building Compassionate Software",
+    "platform": "iOS",
+    "description": "We're going to take a look at psychological safety and how it can help your team perform better. My goal is to give you the evidence you need to take back to your team so we can all improve our workplaces – with enough of us, we can begin to make significant change in our industry and beyond.",
+    "date": "2018-09-06",
+    "email": "ash@ashfurrow.com",
+    "slides": "https://ashfurrow.com/blog/building-compassionate-software/",
+    "stream": "https://youtu.be/xwz4fpo9AT4",
+    "tags": [
+      "Building Compassionate Software",
+      "iOS"
+    ]
+  }
+]

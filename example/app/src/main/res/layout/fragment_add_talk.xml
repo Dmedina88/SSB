@@ -1,0 +1,64 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/presenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="presenter" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="title" />
+
+        <EditText
+            android:id="@+id/platform"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="platform" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="description" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="date" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="email" />
+
+        <EditText
+            android:id="@+id/slides"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="slides" />
+
+        <EditText
+            android:id="@+id/streams"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="streams" />
+        <Button
+            android:id="@+id/submit"
+            android:text="submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</ScrollView>
