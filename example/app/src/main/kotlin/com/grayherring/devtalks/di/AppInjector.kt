@@ -19,34 +19,34 @@ object AppInjector {
     DaggerAppComponent.builder().application(devTalkApp)
         .build().inject(devTalkApp)
     devTalkApp.registerActivityLifecycleCallbacks(object : Application.ActivityLifecycleCallbacks {
-          override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
-            handleActivity(activity)
-          }
+      override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
+        handleActivity(activity)
+      }
 
-          override fun onActivityStarted(activity: Activity) {
+      override fun onActivityStarted(activity: Activity) {
 
-          }
+      }
 
-          override fun onActivityResumed(activity: Activity) {
+      override fun onActivityResumed(activity: Activity) {
 
-          }
+      }
 
-          override fun onActivityPaused(activity: Activity) {
+      override fun onActivityPaused(activity: Activity) {
 
-          }
+      }
 
-          override fun onActivityStopped(activity: Activity) {
+      override fun onActivityStopped(activity: Activity) {
 
-          }
+      }
 
-          override fun onActivitySaveInstanceState(activity: Activity, outState: Bundle?) {
+      override fun onActivitySaveInstanceState(activity: Activity, outState: Bundle?) {
 
-          }
+      }
 
-          override fun onActivityDestroyed(activity: Activity) {
+      override fun onActivityDestroyed(activity: Activity) {
 
-          }
-        })
+      }
+    })
   }
 
   private fun handleActivity(activity: Activity) {
@@ -57,7 +57,9 @@ object AppInjector {
       activity.supportFragmentManager
           .registerFragmentLifecycleCallbacks(
               object : FragmentManager.FragmentLifecycleCallbacks() {
-                override fun onFragmentCreated(fm: FragmentManager?, f: Fragment?, savedInstanceState: Bundle?) {
+                override fun onFragmentCreated(fm: FragmentManager?,
+                                               f: Fragment?,
+                                               savedInstanceState: Bundle?) {
                   if (f is Injectable) {
                     AndroidSupportInjection.inject(f)
                   }

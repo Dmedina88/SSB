@@ -47,7 +47,7 @@ class DataModule {
 
 
   @Provides @Singleton fun provideHttpUrl(): HttpUrl =
-      HttpUrl.parse("removed api lol") as HttpUrl
+      HttpUrl.parse("https://dev-talk-test.herokuapp.com") as HttpUrl
 
 
   @Provides @Singleton fun provideDevTalkApiClient(devTalkApi: DevTalkApi) = DevTalkApiClient(
@@ -71,7 +71,8 @@ class DataModule {
     return retrofit.create(DevTalkApi::class.java)
   }
 
-  @Provides @Singleton fun provideHomeCapturer(application: Application, gson: Gson): GsonPrefRecorder<HomeState> {
+  @Provides @Singleton fun provideHomeCapturer(application: Application,
+                                               gson: Gson): GsonPrefRecorder<HomeState> {
     return GsonPrefRecorder<HomeState>(application.applicationContext.getSharedPreferences("preft",
         0), "stat", Array<HomeState>::class.java, gson)
   }

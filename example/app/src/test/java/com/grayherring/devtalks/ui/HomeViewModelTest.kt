@@ -1,12 +1,11 @@
 package com.grayherring.devtalks.ui
 
-import com.grayherring.devtalks.data.repository.Repository
 import com.grayherring.devtalks.data.repository.api.MockDevTalkApiClient
-import com.grayherring.devtalks.mock.MockAPI
-import com.grayherring.devtalks.ui.home.events.*
-
 import com.grayherring.devtalks.ui.home.HomeState
 import com.grayherring.devtalks.ui.home.HomeViewModel
+import com.grayherring.devtalks.ui.home.events.Tab1Clicked
+import com.grayherring.devtalks.ui.home.events.Tab2Clicked
+import com.grayherring.devtalks.ui.home.events.Tab3Clicked
 import org.junit.Assert
 import org.junit.Before
 import org.junit.ClassRule
@@ -27,7 +26,7 @@ class HomeViewModelTest {
   @Before
   fun setUp() {
     mockAPI = MockDevTalkApiClient()
- //   homeViewModel = HomeViewModel(Repository(MockAPI))
+    //   homeViewModel = HomeViewModel(Repository(MockAPI))
   }
 
   @Test
@@ -40,6 +39,7 @@ class HomeViewModelTest {
     homeViewModel.addEvent(Tab3Clicked())
     Assert.assertTrue(homeViewModel.lastState.tab == 3)
   }
+
   @Test
   fun init() {
     //todo make a state for all the counts
@@ -59,7 +59,6 @@ class HomeViewModelTest {
     Assert.assertTrue(homeViewModel.lastState.talks.containsAll(mockAPI.mockTalksData))
     Assert.assertFalse(homeViewModel.lastState.toString(), homeViewModel.lastState.loading)
   }
-
 
 
 }

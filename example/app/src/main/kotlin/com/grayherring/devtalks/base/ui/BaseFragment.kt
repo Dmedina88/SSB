@@ -11,7 +11,6 @@ import com.grayherring.devtalks.base.util.plusAssign
 import com.grayherring.devtalks.di.Injectable
 import com.grayherring.devtalks.viewmodel.ViewModelFactory
 import io.reactivex.disposables.CompositeDisposable
-import java.util.*
 import javax.inject.Inject
 
 abstract class BaseFragment<V : BaseState, T : BaseViewModel<V>> : LifecycleFragment(), LifecycleRegistryOwner, Injectable {
@@ -30,7 +29,7 @@ abstract class BaseFragment<V : BaseState, T : BaseViewModel<V>> : LifecycleFrag
     super.onViewCreated(view, savedInstanceState)
     //if we are going to bind butterKnife do it here
     initViewModel()
-    
+
   }
 
   override fun onDestroyView() {

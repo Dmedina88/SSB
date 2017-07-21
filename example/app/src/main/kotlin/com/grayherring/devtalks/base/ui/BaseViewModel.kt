@@ -3,8 +3,6 @@ package com.grayherring.devtalks.base.ui
 
 import android.arch.lifecycle.ViewModel
 import android.support.annotation.CallSuper
-import com.grayherring.devtalks.base.events.AnalyticStateEvent
-import com.grayherring.devtalks.base.events.AnalyticsEvent
 import com.grayherring.devtalks.base.events.Event
 import com.grayherring.devtalks.base.util.observeOnMainThread
 import com.grayherring.devtalks.base.util.plusAssign
@@ -68,18 +66,9 @@ abstract class BaseViewModel<T : BaseState> : ViewModel() {
    protected fun createEventStream() {
     disposable +=
         eventRelay.observeOnMainThread()
-            .doOnNext {
-              if(it is AnalyticStateEvent) {
-                it.run(state = state)
-              }else if (it is AnalyticsEvent){
-                it.run()
-              }
-            }
             .map{handleEvents(it)}
             .subscribe { state = it }
   }
-
-  private fun  handleAnalyticEvents(it: Event) {}
 
   /**
    * handles incoming events and returns new state [T]

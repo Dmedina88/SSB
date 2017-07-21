@@ -26,7 +26,7 @@ class EditTalkActivity : BaseActivity<EditState, EditViewModel>() {
   }
 
   override fun bindView(state: EditState) {
-    progress_spinner.visibility = if(state.loading) View.VISIBLE else View.GONE
+    progress_spinner.visibility = if (state.loading) View.VISIBLE else View.GONE
   }
 
   override fun setUpEventStream() {}

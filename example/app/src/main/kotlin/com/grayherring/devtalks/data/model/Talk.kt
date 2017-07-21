@@ -16,13 +16,13 @@ data class Talk(
     val stream: String = "",
     val tags: List<String> = ArrayList<String>(),
     val id: String?
-): PaperParcelable {
+) : PaperParcelable {
   companion object {
     @JvmField val CREATOR = PaperParcelTalk.CREATOR
   }
 
-  fun isValid():Boolean{
-    return notBlank(presenter,title,platform,description,date,email,slides,stream)
+  fun isValid(): Boolean {
+    return notBlank(presenter, title, platform, description, date, email, slides, stream)
   }
 }
 

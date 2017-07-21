@@ -5,10 +5,9 @@ import android.app.Application
 import com.grayherring.devtalks.di.AppInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
+import io.palaima.debugdrawer.timber.data.LumberYard
 import timber.log.Timber
 import javax.inject.Inject
-import io.palaima.debugdrawer.timber.data.LumberYard
-
 
 
 open class DevTalkApp : Application(), HasActivityInjector {

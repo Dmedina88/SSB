@@ -44,7 +44,7 @@ class TalkItemFragment : BaseFragment<HomeState, HomeViewModel>() {
     private val ARG_COLUMN_COUNT = "column-count"
 
     // TODO: Customize parameter initialization
-    fun newInstance(columnCount: Int):TalkItemFragment {
+    fun newInstance(columnCount: Int): TalkItemFragment {
       val fragment = TalkItemFragment()
       val args = Bundle()
       args.putInt(ARG_COLUMN_COUNT,

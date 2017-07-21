@@ -32,6 +32,8 @@ class HomeViewModel @Inject constructor(private val repository: Repository,
   override fun initState() = HomeState()
 
   override fun handleEvents(event: Event): HomeState {
+    Timber.d(event.toString())
+
     val newState = when (event) {
       is ClickEvent -> clickEventReducer(event, state)
       is NetworkEvent -> networkReducer(event, state)
@@ -41,6 +43,8 @@ class HomeViewModel @Inject constructor(private val repository: Repository,
       is ErrorEvent -> state.copy(loading = false, error = event.errorMessage)
       else -> state
     }
+    Timber.d(newState.toString())
+
     if (!replaing) {
       homeRecorder.save(newState)
     }
@@ -95,7 +99,7 @@ class HomeViewModel @Inject constructor(private val repository: Repository,
     replaing = true
     Timber.i("${states.size}")
     Observable.fromIterable(states)
-        .intervalEmitted(500,TimeUnit.MILLISECONDS)
+        .intervalEmitted(500, TimeUnit.MILLISECONDS)
         .doOnComplete { replaing = false }
         .subscribe({
           Timber.i("##replay ${states.indexOf(it)} $it ")

@@ -34,6 +34,7 @@ abstract class BaseActivity<V : BaseState, T : BaseViewModel<V>> : LifecycleActi
     setContentView(viewLayout())
     initViewModel()
   }
+
   /**
    * setup for view model and stream
    */

@@ -10,4 +10,4 @@ data class HomeState(
     val loading: Boolean = false,
     val error: String = "",
     val newTalk: Talk = Talk(id = null),
-    val editScreen: Boolean = false ) : BaseState()
+    val editScreen: Boolean = false) : BaseState()

@@ -4,7 +4,8 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.RecyclerView.Adapter
 import android.view.View
 import android.widget.TextView
-import com.grayherring.devtalks.R.*
+import com.grayherring.devtalks.R.id
+import com.grayherring.devtalks.R.layout
 import com.grayherring.devtalks.data.model.Talk
 import com.grayherring.devtalks.ui.home.events.ItemClickEvent
 

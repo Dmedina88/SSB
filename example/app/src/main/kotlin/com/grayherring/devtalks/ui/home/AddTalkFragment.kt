@@ -25,9 +25,9 @@ class AddTalkFragment : BaseFragment<HomeState, HomeViewModel>() {
     }
   }
 
-  override fun bindView(state: HomeState){
+  override fun bindView(state: HomeState) {
     submit.isEnabled = state.newTalk.isValid()
-    if (viewModel.replaing){
+    if (viewModel.replaing) {
       state.newTalk.let {
         presenter.tentativelyUpdate(it.presenter)
         title.tentativelyUpdate(it.title)
@@ -44,7 +44,7 @@ class AddTalkFragment : BaseFragment<HomeState, HomeViewModel>() {
   override fun setUpEventStream() {
     viewModel.apply {
       disposable.addAll(
-          presenter.TextChangeSkipInit().subscribe {  addEvent(PresenterChangeEvent(it)) },
+          presenter.TextChangeSkipInit().subscribe { addEvent(PresenterChangeEvent(it)) },
           title.TextChangeSkipInit().subscribe { addEvent(TitleChangeEvent(it)) },
           platform.TextChangeSkipInit().subscribe { addEvent(PlatformChangeEvent(it)) },
           description.TextChangeSkipInit().subscribe { addEvent(DescriptionChangeEvent(it)) },

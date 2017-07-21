@@ -32,13 +32,13 @@ class HomeActivity : BaseActivity<HomeState, HomeViewModel>() {
             .subscribe { viewModel.addEvent(it) }
     )
     fab.setOnClickListener {
-      Timber.d("setOnClickListener")
       viewModel.playback()
     }
   }
 
   //todo also move to base //maybe move all the navigation to a navigationer class
   override fun bindView(state: HomeState) {
+    Timber.d(state.toString())
     if (state.tab != tab)
       when (state.tab) {
         1 -> {
