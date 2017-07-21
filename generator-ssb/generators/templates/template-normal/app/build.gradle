@@ -57,11 +57,11 @@ dependencies {
     kapt 'com.google.dagger:dagger-android-processor:2.11'
 
     // Architecture Components
-    compile "android.arch.lifecycle:runtime:1.0.0-alpha4"
-    compile "android.arch.lifecycle:extensions:1.0.0-alpha4"
-    kapt "android.arch.lifecycle:compiler:1.0.0-alpha4"
+    compile "android.arch.lifecycle:runtime:1.0.0-alpha5"
+    compile "android.arch.lifecycle:extensions:1.0.0-alpha5"
+    kapt "android.arch.lifecycle:compiler:1.0.0-alpha5"
 
-    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.1'
 
     //squareup
     compile "com.squareup.retrofit2:retrofit:2.3.0"
@@ -96,8 +96,8 @@ dependencies {
     debugCompile "io.palaima.debugdrawer:debugdrawer-actions:$DEBUG_DRAWER_VERSION"
     compile "io.palaima.debugdrawer:debugdrawer-timber:$DEBUG_DRAWER_VERSION"
     //
-    debugCompile 'com.readystatesoftware.chuck:library:1.0.1'
-    releaseCompile 'com.readystatesoftware.chuck:library-no-op:1.0.1'
+    debugCompile 'com.readystatesoftware.chuck:library:1.0.4'
+    releaseCompile 'com.readystatesoftware.chuck:library-no-op:1.0.4'
 
 //    compile "com.jakewharton:butterknife:8.5.1"
 //    kapt "com.jakewharton:butterknife-compiler:8.5.1"
