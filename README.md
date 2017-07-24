@@ -1,6 +1,6 @@
-## Android Kotlin MVVM + Flux  
+## Android Kotlin MVVM + Redux  
 
-yeoman generator to set up a flux MVVM(without databinding  lib by default) type project for android with DI set up and debug draw
+yeoman generator to set up a flux MVVM(without databinding lib by default) type project for android with DI set up and debug draw
 
 ## How to run 
 cd to generator-ssb
@@ -22,7 +22,7 @@ run: yo ssb
 - [Timber](https://github.com/JakeWharton/timber)
 - [DebugDrawer](https://github.com/palaima/DebugDrawer)
 
-MVVM + Flux is a user interface architectural pattern engineered to facilitate Unidirectional data flow:
+MVVM + Redux is a user interface architectural pattern engineered to facilitate Unidirectional data flow:
 
 - The __ViewModel__ gets an __Event__ via add event then mutates the __State__ and/or triggers asynchronous action that will comeback with a new __Event__ after state is mutated its published to the __State__ relay for observes to react to.
 - The __State__ is the model that represents the current state of the app or feature.
