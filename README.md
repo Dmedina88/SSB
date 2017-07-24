@@ -16,6 +16,7 @@ run: yo ssb
 - [RxJava2](https://github.com/ReactiveX/RxJava)
 - [RxAndroid](https://github.com/ReactiveX/RxAndroid)
 - [RxBinding](https://github.com/JakeWharton/RxBinding)
+- [RxRelay](https://github.com/JakeWharton/RxRelay)
 - [Retrofit](http://square.github.io/retrofit/) / [OkHttp](http://square.github.io/okhttp/)
 - [Gson](https://github.com/google/gson)
 - [Dagger 2](http://google.github.io/dagger/)
